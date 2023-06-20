@@ -1,54 +1,37 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#our main.sh is our application
 
-students_file="students-list_0333.txt"
-emails_file="student-emails.txt"
-
-while true; do
-    echo "--------------------------------"
-    echo "Bachelor of Software Engineering Cohort List"
-    echo "1. Create student record"
-    echo "2. View all students"
-    echo "3. Delete student"
-    echo "4. Update student record"
-    echo "5. Exit"
-    echo "--------------------------------"
-    read -p "Enter your choice: " choice
-
-    case $choice in
-        1) # Create student record
-            read -p "Enter student email: " email
-            read -p "Enter student age: " age
-            read -p "Enter student ID: " student_id
-            echo "$email $age $student_id" >> "$students_file"
-            echo "Student record created."
-            ;;
-        2) # View all students
-            echo "Student list:"
-            cat "$students_file"
-            ;;
-        3) # Delete student
-            read -p "Enter student ID to delete: " delete_id
-            sed -i "/\b$delete_id\b/d" "$students_file"
-            echo "Student deleted."
-            ;;
-        4) # Update student record
-            read -p "Enter student ID to update: " update_id
-            if grep -q "\<$update_id\>" "$students_file"; then
-                read -p "Enter new email: " new_email
-                read -p "Enter new age: " new_age
-                sed -i "s/\<$update_id\>\(.*\)/$new_email $new_age $update_id/" "$students_file"
-                echo "Student record updated."
-            else
-                echo "Student not found."
-            fi
-            ;;
-        5) # Exit
-            echo "Exiting application."
-            exit 0
-            ;;
-        *) # Invalid choice
-            echo "Invalid choice. Please try again."
-            ;;
-    esac
-done
-
+while true;
+do
+	echo "Welcome to Bachelor of Software Engineering cohort list of students app"
+	sleep 2
+	echo "Enter 1 for create new record, 2 for listing saved student details, 3 for deleting student detail, 4 for updating existing student record, 5 to exit application"
+	sleep 2
+	read -r OPTION
+	case "$OPTION" in
+		"1")
+			echo "creating a new record..."
+			source createrecord.sh
+			;;
+		"2")
+			echo "listing saved students"
+			source liststudents.sh
+			;;
+		"3")
+			echo "deleting saved student details..."
+			source deletestudent.sh
+			;;
+		"4")
+			echo "updating student details..."
+			source updatedetails.sh
+			;;
+		"5")
+			echo "exiting application..."
+			exit 1
+			;;
+		*)
+			echo "invalid option"
+			echo "options are from 1 to 5"
+			;;
+	esac
+done	
