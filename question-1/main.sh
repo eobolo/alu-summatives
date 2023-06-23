@@ -3,27 +3,31 @@
 
 while true;
 do
-	echo "Welcome to Bachelor of Software Engineering cohort list of students app"
-	sleep 2
-	echo "Enter 1 for create new record, 2 for listing saved student details, 3 for deleting student detail, 4 for updating existing student record, 5 to exit application"
-	sleep 2
-	read -r OPTION
-	case "$OPTION" in
+	echo "--------------------------------"
+    	echo "Bachelor of Software Engineering Cohort List"
+    	echo "1. Create student record"
+    	echo "2. View all students"
+    	echo "3. Delete student"
+    	echo "4. Update student record"
+    	echo "5. Exit"
+    	echo "--------------------------------"
+	read -r -p "Enter your choice: " CHOICE
+	case "$CHOICE" in
 		"1")
 			echo "creating a new record..."
-			source createrecord.sh
+			../createrecord.sh
 			;;
 		"2")
 			echo "listing saved students"
-			source liststudents.sh
+			../liststudents.sh
 			;;
 		"3")
 			echo "deleting saved student details..."
-			source deletestudent.sh
+			../deletestudent.sh
 			;;
 		"4")
 			echo "updating student details..."
-			source updatedetails.sh
+			../updatedetails.sh
 			;;
 		"5")
 			echo "exiting application..."
