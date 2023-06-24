@@ -10,6 +10,7 @@ do
     	echo "3. Delete student"
     	echo "4. Update student record"
     	echo "5. Exit"
+	echo "6. to get records"
     	echo "--------------------------------"
 	read -r -p "Enter your choice: " CHOICE
 	case "$CHOICE" in
@@ -32,6 +33,10 @@ do
 		"5")
 			echo "exiting application..."
 			exit 1
+			;;
+		"6")
+			echo "getting records..."
+			../getrecord.sh
 			;;
 		*)
 			echo "invalid option"

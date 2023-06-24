@@ -7,3 +7,4 @@
 {STUDENTEMAIL:e.aramide@alustudent.com, AGE:17, STUDENTID:191871}
 {STUDENTEMAIL:m.oragudosi@alustudent.com, AGE:25, STUDENTID:102023}
 {STUDENTEMAIL:a.kumuyi@alustudent.com, AGE:30, STUDENTID:124556}
+{STUDENTEMAIL:michael.obolo@yahoo.com, AGE:31, STUDENTID:102345}
