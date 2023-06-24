@@ -1,0 +1,9 @@
+{STUDENTEMAIL:obolo.emmanuel31052000@gmail.com, AGE:24, STUDENTID:452035}
+{STUDENTEMAIL:s.asaph@alustudent.com, AGE:29, STUDENTID:672035}
+{STUDENTEMAIL:r.kaze@alustudent.com, AGE:35, STUDENTID:342023}
+{STUDENTEMAIL:muzbyberry@gmail.com, AGE:34, STUDENTID:162035}
+{STUDENTEMAIL:mrsobolo@gmail.com, AGE:35, STUDENTID:122025}
+{STUDENTEMAIL:b.bakare@alustudent.com, AGE:25, STUDENTID:123456}
+{STUDENTEMAIL:e.aramide@alustudent.com, AGE:17, STUDENTID:191871}
+{STUDENTEMAIL:m.oragudosi@alustudent.com, AGE:25, STUDENTID:102023}
+{STUDENTEMAIL:a.kumuyi@alustudent.com, AGE:30, STUDENTID:124556}
