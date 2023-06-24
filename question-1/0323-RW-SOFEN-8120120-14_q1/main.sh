@@ -15,19 +15,19 @@ do
 	case "$CHOICE" in
 		"1")
 			echo "creating a new record..."
-			../createrecord.sh
+			../../createrecord.sh
 			;;
 		"2")
 			echo "listing saved students"
-			../liststudents.sh
+			../../liststudents.sh
 			;;
 		"3")
 			echo "deleting saved student details..."
-			../deletestudent.sh
+			../../deletestudent.sh
 			;;
 		"4")
 			echo "updating student details..."
-			../updatedetails.sh
+			../../updatedetails.sh
 			;;
 		"5")
 			echo "exiting application..."

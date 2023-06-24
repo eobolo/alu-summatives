@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 #updating student details using the student ID
+
+#FIRST PART OF THE CODE
 #checking if student id exist
 echo "What do you want to update age or email, write in lowercase, or input quit to exit update action"
 read -r UPDATE
@@ -17,7 +19,7 @@ echo "give me student ID"
 read -r STUDENTID
 
 
-
+#LAST PART OF THE CODE
 #update details function if student id is present
 
 update_details() {
@@ -43,7 +45,8 @@ update_details() {
         fi
 }
 
-#checking if studentid is present or absent
+#SECOND PART OF THE CODE
+#checking if studentid is present inorder to update details or absent inorder to request for correct student id or quit
 while true;
 do
 	if [ "$UPDATE" = "quit" ];

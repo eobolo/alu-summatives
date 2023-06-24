@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#our main.sh that takes record of every user created
 #create the student record
 echo "Please input your student email:"
 read -r STUDENTEMAIL
